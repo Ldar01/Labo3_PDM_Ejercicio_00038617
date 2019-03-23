@@ -27,6 +27,15 @@ public class InformationActivity extends AppCompatActivity {
             v_email.setText(intento.getStringExtra(AppConstants.TEXT_KEY_EMAIL));
             v_gender.setText(intento.getStringExtra(AppConstants.TEXT_KEY_GENDER));
         }
+
+        share_button.setOnClickListener(v->{
+            Intent intento_compartir = new Intent();
+            intento_compartir.setAction(Intent.ACTION_SEND);
+            intento_compartir.setType("text/plain");
+            intento_compartir.putExtra(Intent.EXTRA_TEXT,v_nick.getText().toString()+"\n"+
+                    v_password.getText().toString()+"\n"+v_email.getText().toString()+"\n"+v_gender.getText().toString());
+            startActivity(intento_compartir);
+        });
     }
 
     public void Find_id_of_objects(){
