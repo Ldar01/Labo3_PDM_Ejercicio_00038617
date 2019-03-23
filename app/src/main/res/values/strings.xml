@@ -1,0 +1,10 @@
+<resources>
+    <string name="app_name">Tarea_Labo3</string>
+    <string name="Text_Send">send</string>
+    <string name="hint_last_name">Last name</string>
+    <string name="hint_password">Password</string>
+    <string name="hint_gender">Gender</string>
+    <string name="hint_email">Email</string>
+    <string name="hint_nickname">Nickname</string>
+    <string name="text_share">Share</string>
+</resources>
