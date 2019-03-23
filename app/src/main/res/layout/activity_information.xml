@@ -4,24 +4,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".InformationActivity">
+    tools:context=".InformationActivity"
+    android:orientation="vertical"
+    android:layout_gravity="center">
 
     <TextView
         android:id="@+id/view_nickname"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content"/>
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_panel"/>
     <TextView
         android:id="@+id/view_password"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_panel"/>
     <TextView
         android:id="@+id/view_email"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_panel"/>
     <TextView
         android:id="@+id/view_gender"
         android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+        android:layout_height="wrap_content"
+        android:layout_margin="@dimen/margin_panel"/>
     <Button
         android:id="@+id/button_share"
         android:layout_width="wrap_content"

@@ -1,9 +1,12 @@
 package com.example.tarea_labo3;
 
+import android.content.Intent;
 import android.support.v7.app.AppCompatActivity;
 import android.os.Bundle;
 import android.widget.Button;
 import android.widget.EditText;
+
+import com.example.tarea_labo3.Utils.AppConstants;
 
 public class MainActivity extends AppCompatActivity {
 
@@ -17,7 +20,14 @@ public class MainActivity extends AppCompatActivity {
 
         Find_id_of_objects();
 
-
+        send_button.setOnClickListener(v->{
+            Intent intento = new Intent(MainActivity.this, InformationActivity.class);
+            intento.putExtra(AppConstants.TEXT_KEY_NICKNAME,nick.getText().toString());
+            intento.putExtra(AppConstants.TEXT_KEY_PASSWORD,password.getText().toString());
+            intento.putExtra(AppConstants.TEXT_KEY_EMAIL, email.getText().toString());
+            intento.putExtra(AppConstants.TEXT_KEY_GENDER, gender.getText().toString());
+            startActivity(intento);
+        });
 
     }
 

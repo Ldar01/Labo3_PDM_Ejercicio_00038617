@@ -7,4 +7,5 @@
     <string name="hint_email">Email</string>
     <string name="hint_nickname">Nickname</string>
     <string name="text_share">Share</string>
+    <string name="msg_nothing">No hay nada registrado</string>
 </resources>
